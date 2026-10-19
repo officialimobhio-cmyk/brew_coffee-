@@ -1,0 +1,314 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behaviour:smooth;
+}
+
+.body{
+    font-family:Arial, sans-serif;
+    background-color:#fffaf5;
+    color:#2d1b12;
+    line-height:1.6;
+    }
+
+  .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+ }
+ 
+ 
+        /*======================
+                NAV BAR
+         ======================*/
+         
+.header{
+    background:#3b2116;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000px;
+}
+
+.navbar{
+    height:70px;
+    background:#2d1b12;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align:left;
+}
+
+.logo{
+    margin:15px;
+    color:white;
+    font-size:26px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#d99a5b;
+}
+
+.nav-links{
+    display:flex;
+    gap:5px;
+    list-style:none;
+    cursor:pointer;
+}
+
+.nav-links a{
+    margin:15px;
+    color: white ;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    text-decoration:underline;
+    color: #d99a5b;
+}
+
+.menu-btn{
+    display:none;
+    color:white;
+    font-size:28px;
+    margin:10px;
+    align-item: center;
+    cursor:pointer;
+}
+
+  /*===================== 
+      HERO-SECTION
+  ======================= */
+  
+  
+.hero{
+    min-height:90vh;
+    background:#be850493;
+    display:flex;
+    color:white;
+    align-items:center;
+    }
+    
+.hero-content{
+    max-width:650px;
+}
+
+.hero h1{
+    font-size:60px;
+    line-height: 1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+      color: #d99a5b;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display: inline-block;
+    background: transparent;
+    color:white;
+    padding:13px 25px;
+    border:2px solid white;
+    border-radius: 5px;
+    text-decoration:none;
+    font-weight:bold;
+    transition: 0.3s;
+   
+}
+
+.btn:hover{
+    color:#d99a5b;
+}
+    
+    
+    /* ABOUT SECTION*/
+    
+.about{
+    Background-color: #F8F3ED;
+    width:100%;
+    border-box:border-sizing;
+ 
+ .about-content{
+     display:grid;
+     grid-template-column:1fr;
+     gap:50px;
+     align-item:center;
+     margin :0;
+ }
+ 
+ 
+ /* COFFEE IMAGE */
+ 
+ .about-image img{
+     width:356px;
+     height:356px;
+     max-width:450px;
+     object-fit:cover;
+     display:block;
+ }
+ 
+ /* TEXT CONTENT */
+ .about-text{
+     width:100%;
+     min-height:50vh;
+     Background-color: #F8F3ED;
+     text-align:left;
+     padding:12px;
+     margin-top:20px;
+ }
+ 
+ .about-text h2{
+     font-size:40px;
+     margin-bottom:20px;
+ }
+ 
+ .about-text p{
+     colour: #5C4033; 
+     margin-bottom:20px ;
+ }
+ 
+ 
+ 
+ /* ==========================
+            MENU
+ ============================= */
+ 
+ .menu-grid{
+     display:grid;
+     grid-template-column: repeat(3,1fr);
+     gap:25px;
+ }
+ 
+ .menu-card{
+     min-height: 90vh;
+     background:##433522##;
+     border-radius:10px;
+     overflow:hidden;
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+     transition:0.8s;
+ }
+ 
+.menu-card:hover{
+     transform: translateY(20px)
+ };
+ 
+.menu-card img{
+     height:px;
+     object-fit:cover;
+ }
+ 
+.menu-info{
+    padding:20px;
+}
+
+.menu h3{
+    margin-bottom:10px;
+}
+
+.menu p{
+    color:#755b4b;
+    margin-bottom:15px;    
+}
+
+.price{
+    color:#a65f2e;
+    font-size:20px;
+    font-weight:bold;
+}
+  /* =========================
+           FOOTER
+     ======================== */
+ 
+ . footer{
+     display:flex;
+     background: #3b2116;
+     
+ }
+.footer-container{
+    min-height:90vh;
+    margin:10px;
+    padding:10px;
+    background: #3b2116;
+}
+ 
+ 
+ 
+    @media(max-width:600px){
+    
+    .header{
+        
+    }
+   
+    .nav-bar{
+        height:65px;               
+    }
+    
+    .logo{
+        font-size:20px;
+    }
+    
+    .menu-btn{
+        display:block;
+    }
+    
+    .nav-links{
+        position: absolute;
+        top:65px;
+        left:0;
+        width:100%;
+        flex-direction:column;
+        background: #3b2116;
+        gap:0;
+        display:none;
+    }
+    
+    .nav-links.active{
+        display:flex;
+    }
+    
+    .nav-link li{
+        width:100%;
+        text-align:center;
+    }
+    .nav-links a{
+        display:block;
+        padding:15px;
+    }
+    . hero {
+        min-height:100vh;
+        padding:30px;
+    }
+   
+   .hero h1{
+       font-size:40px;
+       
+   }
+   
+   .hero p{
+       font-size:16px;
+   }
+   
+  .menu-btn{
+      
+  }
+}
+ 
+    
+    
+    
+    
+    
+    
+    
+    
